@@ -7,8 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.example.payroll.Status;
-
 @Entity
 @Table(name="CUSTOMER_ORDER")
 public class Order {
@@ -16,9 +14,9 @@ public class Order {
     private String description;
     private Status status;
 
-    Order() {}
+    public Order() {}
 
-    Order(String description, Status status){
+    public Order(String description, Status status){
         this.description = description;
         this.status = status;
     }
